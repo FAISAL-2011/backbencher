@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gaming Global Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAME SCREEN -->
+<div id="nameScreen" class="screen">
+  <h1>🎮 Gaming Chat</h1>
+  <input type="text" id="username" placeholder="Enter your name">
+  <button onclick="enterChat()">ENTER</button>
+</div>
+
+<!-- CHAT SCREEN -->
+<div id="chatScreen" class="screen hidden">
+  <div class="chat-header">
+    🌍 Global Chat
+    <div id="onlineCount">Online: 0</div>
+  </div>
+
+  <div id="messages" class="messages"></div>
+
+  <div class="input-box">
+    <input type="text" id="messageInput" placeholder="Type a message">
+    <button onclick="sendMessage()">➤</button>
+  </div>
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
